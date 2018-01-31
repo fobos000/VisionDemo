@@ -12,14 +12,31 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let detectionVC = DetectionViewController.shared
+        addChildViewController(detectionVC)
+        detectionVC.view.frame = view.bounds
+        view.addSubview(detectionVC.view)
+        detectionVC.didMove(toParentViewController: self)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        let detectionVC = DetectionViewController.shared
+        detectionVC.willMove(toParentViewController: nil)
+        detectionVC.view.removeFromSuperview()
+        detectionVC.removeFromParentViewController()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 

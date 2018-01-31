@@ -13,6 +13,10 @@
 		3F7BEF3B20220D590025B55F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7BEF3920220D590025B55F /* Main.storyboard */; };
 		3F7BEF3D20220D590025B55F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7BEF3C20220D590025B55F /* Assets.xcassets */; };
 		3F7BEF4020220D590025B55F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7BEF3E20220D590025B55F /* LaunchScreen.storyboard */; };
+		3F7BEF4820220E0E0025B55F /* VisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7BEF4720220E0E0025B55F /* VisionManager.swift */; };
+		3F7BEF4A20220E860025B55F /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7BEF4920220E860025B55F /* CameraView.swift */; };
+		3F7BEF4F202215560025B55F /* DetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7BEF4D202215560025B55F /* DetectionViewController.swift */; };
+		3F7BEF50202215560025B55F /* DetectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7BEF4E202215560025B55F /* DetectionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		3F7BEF3C20220D590025B55F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F7BEF3F20220D590025B55F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F7BEF4120220D590025B55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F7BEF4720220E0E0025B55F /* VisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionManager.swift; sourceTree = "<group>"; };
+		3F7BEF4920220E860025B55F /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		3F7BEF4D202215560025B55F /* DetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionViewController.swift; sourceTree = "<group>"; };
+		3F7BEF4E202215560025B55F /* DetectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetectionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +67,14 @@
 				3F7BEF3320220D590025B55F /* AppDelegate.swift */,
 				3F7BEF3520220D590025B55F /* FirstViewController.swift */,
 				3F7BEF3720220D590025B55F /* SecondViewController.swift */,
+				3F7BEF4920220E860025B55F /* CameraView.swift */,
 				3F7BEF3920220D590025B55F /* Main.storyboard */,
 				3F7BEF3C20220D590025B55F /* Assets.xcassets */,
 				3F7BEF3E20220D590025B55F /* LaunchScreen.storyboard */,
 				3F7BEF4120220D590025B55F /* Info.plist */,
+				3F7BEF4720220E0E0025B55F /* VisionManager.swift */,
+				3F7BEF4D202215560025B55F /* DetectionViewController.swift */,
+				3F7BEF4E202215560025B55F /* DetectionViewController.xib */,
 			);
 			path = VisionDemo;
 			sourceTree = "<group>";
@@ -128,6 +140,7 @@
 			files = (
 				3F7BEF4020220D590025B55F /* LaunchScreen.storyboard in Resources */,
 				3F7BEF3D20220D590025B55F /* Assets.xcassets in Resources */,
+				3F7BEF50202215560025B55F /* DetectionViewController.xib in Resources */,
 				3F7BEF3B20220D590025B55F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +153,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F7BEF3820220D590025B55F /* SecondViewController.swift in Sources */,
+				3F7BEF4820220E0E0025B55F /* VisionManager.swift in Sources */,
 				3F7BEF3420220D590025B55F /* AppDelegate.swift in Sources */,
+				3F7BEF4A20220E860025B55F /* CameraView.swift in Sources */,
+				3F7BEF4F202215560025B55F /* DetectionViewController.swift in Sources */,
 				3F7BEF3620220D590025B55F /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
